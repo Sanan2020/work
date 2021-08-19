@@ -63,7 +63,7 @@ if($pageWasRefreshed ) {
 						if(!file_exists($target)){/*ถ้าไม่เจอไฟล์ หรือชื่อไฟล์ที่ซ้ำกัน*/
 							$pic_prod = $newname;/*รับชื่อไฟล์รูป(ชื่อใหม่)*/
 							move_uploaded_file($_FILES['file']['tmp_name'], $target);
-							break;/*ออกจากลูป*/
+							break;/*ออกจากลูปนะ*/
 						}
 					}while(file_exists($target));
 			}
